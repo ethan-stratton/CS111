@@ -1,0 +1,11 @@
+{
+    "tests": [
+        {
+            "score": 3,
+            "max_score": 3,
+            "name": "test_lab05.py::test_sepia",
+            "output": "\n",
+            "visibility": "visible"
+        }
+    ]
+}

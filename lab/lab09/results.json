@@ -1,0 +1,25 @@
+{
+    "tests": [
+        {
+            "score": 2,
+            "max_score": 2,
+            "name": "test_lab09.py::test_in_range1",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 8,
+            "max_score": 8,
+            "name": "test_lab09.py::test_in_range2",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 10,
+            "max_score": 10,
+            "name": "test_lab09.py::test_grid_get_and_set_out_of_bounds",
+            "output": "\n",
+            "visibility": "visible"
+        }
+    ]
+}

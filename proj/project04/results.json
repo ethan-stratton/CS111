@@ -1,0 +1,11 @@
+{
+    "tests": [
+        {
+            "score": 5,
+            "max_score": 5,
+            "name": "test_webcrawler.py::test_valid_arguments",
+            "output": "\n",
+            "visibility": "visible"
+        }
+    ]
+}

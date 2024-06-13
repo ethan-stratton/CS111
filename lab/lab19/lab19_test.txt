@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#002e5d" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#003da5" />
+
+  <!-- KaTeX -->
+  <script type="module">
+    import katex from "https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.mjs";
+    import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.mjs";
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "\\[", right: "\\]", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+      ],
+    });
+  </script>
+  <link rel="stylesheet" href="https://cs111.byu.edu/assets/css/katex.css"
+    integrity="sha384-yW1frltt4cd2K6QCmOMx4M+ylOmyrGb+NDouZ1f5VL2f4NN7uBu5PQsmUSgWib1W" crossorigin="anonymous" />
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="https://cs111.byu.edu/assets/css/main.css" />
+  <link rel="stylesheet" href="https://cs111.byu.edu/assets/css/inter.css" />
+  <link rel="stylesheet" href="https://cs111.byu.edu/assets/css/ringside-narrow.css" />
+
+  <!-- hljs -->
+  <link rel="stylesheet" href="assets/css/chalk.css" />
+
+  <!-- Font Awesome -->
+  <link href="https://cs111.byu.edu/assets/css/fontawesome.css" rel="stylesheet" />
+  <link href="https://cs111.byu.edu/assets/css/brands.css" rel="stylesheet" />
+  <link href="https://cs111.byu.edu/assets/css/solid.css" rel="stylesheet" />
+
+  <title>CS 111 Spring 2024</title>
+</head>
+
+<body class="min-h-full dark:bg-gray-900">
+  <nav
+    class="bg-byu-navy dark:bg-byu-royal text-slate-50 flex justify-between items-center py-1 px-4 h-20 md:h-14 sticky top-0 shadow shadown-neutral-200 flex-col md:flex-row">
+    <div class="flex flex-row gap-3">
+      <a href="https://byu.edu/"><img class="h-8" src="assets/images/BYU%20monogram_white.svg" alt="BYU" /></a>
+      <div class="w-1 border-r border-white h-8"></div>
+      <a class="text-2xl font-display" href="https://cs111.byu.edu/">Computer Science 111</a>
+    </div>
+    <div class="flex space-x-4 font-semibold">
+      <a href="/">Home</a>
+      <a href="/staff">Staff</a>
+      <a href="/articles/about">Syllabus</a>
+      <a href="https://students.cs.byu.edu/~cs111ta/helpqueue/">Help Queue</a>
+    </div>
+  </nav>
+
+  <div class="3xl:container 3xl:mx-auto px-4 md:px-16" id="content">
+    <article class="prose dark:prose-invert prose-quoteless max-w-none pt-4">
+      <header>
+        <h1>CS 111: Introduction to Computer Science</h1>
+        <h2>Spring 2024</h2>
+        <p>Instructor: Michael Reynolds (<em>Please message me on <b>Microsoft Teams (mtr26@byu.edu)</b> or book time with me: <a href="https://calendly.com/mtr26">https://calendly.com/mtr26</a></em>)</p>
+        
+        <h2><a href="https://cs111.byu.edu/discord">Course Discord</a></h2>
+      </header>
+
+      <section class="overflow-x-auto">
+        <table id="calendar"
+          class="table table-responsive px-1 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700"
+          cellpadding="5px">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Lecture</th>
+              <th>Textbook</th>
+              <th>Lab Links</th>
+              <th>Homework &amp; Project Due Dates</th>
+            </tr>
+          </thead>
+
+          <colgroup>
+            <col style="width: 5em; min-width: 5em" span="1" />
+            <col span="1" />
+            <col style="width: 12em; min-width: 12em" span="1" />
+            <col span="1" />
+            <col span="1" />
+          </colgroup>
+
+          <tbody>
+            <!-- WEEK 1 -->
+            <tr class="week-header">
+              <th colspan="5">Week 1</th>
+            </tr>
+            <tr>
+              <td>Mon<br />Apr 29</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tue<br />Apr 30</td>
+              <td>
+                Welcome!<br />
+                <a href="lectures/Stephens/Lecture01-BasicPython.pptx">Basic Python Syntax</a>
+              </td>
+              <td></td>
+              <td>
+                <a href="/Labs/lab00/">Lab 00: Getting Started</a><br />
+                <a href="/Labs/lab01/">Lab 01: Python Setup</a>
+              </td>
+              <td>Canvas Quizes! <br/><ol><li>Self Assessment</li><li>Python Programming Checklist</li></ol></td>
+            </tr>
+            <tr>
+              <td>Wed<br />May 1</td>
+              <td><a href="lectures/Stephens/Lecture02-ConditionalsLoopsListsFiles.pptx">Conditionals, Loops, Lists, &
+                Files</a></td>
+              <td></td>
+              <td><a href="/Labs/lab02/">Lab 02: Variables, Functions, and Control</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Thur<br />May 2</td>
+              <td><a href="lectures/Stephens//Lecture03-StringsSlicingRangesComrehensions.pptx">Strings, Slicing,
+                Ranges, & Comprehensions</a><br /><a href="lectures/Stephens/Lecture04-EnvironmentsTuplesDictionaries.pptx">Environments, Tuples,
+                  Dictionaries, & Incremental Development</a></td>
+              <td></td>
+              <td><a href="/Labs/lab03">Lab 03: Functions Lists, & File I/O</a></td>
+              <td><a href="/Homework/homework01/">Homework 1: College Admissions Algorithms</a></td>
+            </tr>
+            <tr>
+              <td>Fri<br />May 3</td>
+              <td><a href="lectures/Stephens/Lecture05-IteratorsGenerators.pptx">Iterators & Generators</a></td>
+              <td></td>
+              <td><a href="/Labs/lab04/">Lab 04: Debugging</a></td>
+              <td></td>
+            </tr>
+
+
+            <!-- WEEK 2 -->
+            <tr class="week-header">
+              <th colspan="5">Week 2</th>
+            </tr>
+            <tr>
+              <td>Mon<br />May 6</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tue<br />May 7</td>
+              <td><a href="lectures/Stephens/Lecture06-LibrariesImages.pptx">Libraries and Images</a><br/>
+                <a href="lectures/Stephens/Lecture07-AbstractionsNames.pptx">Abstraction & Naming</a>
+                </td>
+              <td></td>
+              <td><a href="/Labs/lab05/">Lab 05: Picture Puzzles & Filters</a></td>
+              <td><a href="/Homework/homework02/">Homework 2: Image Manipulation</a></td>
+            </tr>
+            <tr>
+              <td>Wed<br />May 8</td>
+              <td><a href="lectures/Stephens/Lecture08-CommandLineArgumentsErrors.pptx">Command-line arguments &
+                Errors</a></td>
+              <td></td>
+              <td><a href="/Labs/lab06/">Lab 06: Command Line Arguments</a></td>
+              <td><a href="/Projects/project01/">Project 1: Image Processor</a></td>
+            </tr>
+            <tr>
+              <td>Thur<br />May 9</td>
+              <td><a href="lectures/Stephens/Lecture09-Classes.pptx">Classes</a><br/>
+                <a href="lectures/Stephens/Lecture10-MoreClasses.pptx">More Classes</a></td>
+              <td></td>
+              <td><a href="/Labs/lab07">Lab 07: Classes</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Fri<br />May 10</td>
+              <td><a href="lectures/Stephens/Lecture11-DunderFunctionsRandomNumbers.pptx">Dunder Functions & Random
+                numbers</a></td>
+              <td></td>
+              <td><a href="/Labs/lab08">Lab 08: Starting the Grid class</a></td>
+              <td></td>
+            </tr>
+
+            <!-- WEEK 3 -->
+            <tr class="week-header">
+              <th colspan="5">Week 3</th>
+            </tr>
+            <tr>
+              <td>Mon<br />May 13</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tue<br />May 14</td>
+              <td><a href="lectures/Stephens/Lecture12-ExceptionsDecomposition.pptx">Exceptions & Decomposition</a></td>
+              <td></td>
+              <td><a href="/Labs/lab09">Lab 09: Exceptions</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Wed<br />May 15</td>
+              <td><a href="lectures/Stephens/Lecture13-FunctionalProgrammingHigherOrderFunctions.pptx">Functional
+                Programming <br />& Higher-order Functions</a></td>
+              <td></td>
+              <td><a href="/Labs/lab10">Lab 10: Functional Programming</a></td>
+              <td><a href="/Homework/homework03"> Homework 3: The Grid Class</a></td>
+            </tr>
+            <tr>
+              <td>Thur<br />May 16</td>
+              <td><a href="lectures/Stephens/Lecture14-CompositionLambdasDecorators.pptx">Composition, Lambdas, &
+                Decorators</a></td>
+              <td></td>
+              <td><a href="/Labs/lab11/">Lab 11: Higher Order Functions</a></td>
+              <td><a href="/Homework/homework04/">Homework 4: The Sand Class</a><br/>
+                <a href="/Projects/project02/">Project 2: Falling Sand</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Fri<br />May 17</td>
+              <td><a href="lectures/Stephens/Lecture15-Mutability.pptx">Mutability</a><br/>
+                <a href="lectures/Stephens/Lecture16-Testing.pptx">Testing</a></td>
+              <td></td>
+              <td><a href="/Labs/lab12/">Lab 12: Testing</a></td>
+              <td><strong class="test-announcement">Midterm 1 Opens</strong><br>
+                <a href="/assets/exams/current_mt1.pdf">Sample exam</a><br>
+                <a href="/assets/exams/current_mt1_key.pdf">Solutions</a><br></td>
+            </tr>
+
+            <!-- WEEK 4 -->
+            <tr class="week-header">
+              <th colspan="5">Week 4</th>
+            </tr>
+            <tr>
+              <td>Mon<br />May 20</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><strong class="test-announcement">Midterm 1 Closes</strong></td>
+            </tr>
+            <tr>
+              <td>Tue<br />May 21</td>
+              <td><a href="lectures/Stephens/Lecture17-Recursion.pptx">Recursion</a></td>
+              <td></td>
+              <td><a href="/Labs/lab13">Lab 13: Recursion</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Wed<br />May 22</td>
+              <td><a href="lectures/Stephens/Lecture18-LinkedLists.pptx">Recursion & Linked Lists</a></td>
+              <td></td>
+              <td><a href="/Labs/lab14">Lab 14: Linked List</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Thur<br />May 23</td>
+              <td><a href="lectures/Stephens/Lecture20-TreeRecursion.pptx">Tree Recursion</a><br/>
+                <a href="lectures/Stephens/Lecture21-MergeSort.pptx">Tree Recursion & Mergesort</a></td>
+              <td></td>
+              <td>QA/Help with Recursion</td>
+              <td><a href="/Homework/homework05">Homework 5: Merge sort</a></td>
+            </tr>
+            <tr>
+              <td>Fri<br />May 24</td>
+              <td><a href="lectures/Stephens/Lecture22-Trees.pptx">Trees</a></td>
+              <td></td>
+              <td><a href="/Labs/lab15">Lab 15: Trees</a></td>
+              <td></td>
+            </tr>
+
+            <!-- WEEK 5 -->
+            <tr class="week-header">
+              <th colspan="5">Week 5</th>
+            </tr>
+            <tr>
+              <td>Mon<br />May 27</td>
+              <td colspan="4" style="background: #aaaaff; text-align: center; vertical-align: middle"><strong>No Class -
+                Memorial Day</strong></td>
+              <!-- td>(Memorial Day) </td -->
+            </tr>
+            <tr>
+              <td>Tue<br />May 28</td>
+              <td><a href="lectures/Stephens/Lecture23-LanguageSyntax.pptx">Calculator language & Language Syntax</a></td>
+              <td></td>
+              <td><a href="/Labs/lab16">Lab 16: Parsing</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Wed<br />May 29</td>
+              <td><a href="lectures/Stephens/Lecture24-ParsingEvaluation.pptx">Langauge Parsing & Evaluation</a></td>
+              <td></td>
+              <td>QA/Help with Homework 6 and Project 3</td>
+              <td><a href="/Homework/homework06">Homework 6: Parsing</a></td>
+            </tr>
+            <tr>
+              <td>Thur<br />May 30</td>
+              <td><a href="lectures/Stephens/Lecture25-RegularExpressions.pptx">Regular Expressions</a></td>
+              <td></td>
+              <td><a href="/Labs/lab17">Lab 17: Regular Expressions</a></td>
+              <td><a href="/Projects/project03/">Project 3: Calculator Interpreter</a></td>
+            </tr>
+            <tr>
+              <td>Fri<br />May 31</td>
+              <td><a href="lectures/Stephens/Lecture28-WWW_HTMLandCSS.pptx">Intro to the World Wide Web & HTML</a></td>
+              <td></td>
+              <td><a href="/Labs/lab18">Lab 18: HTML & Web Fundamentals</a></td>
+              <td><strong class="test-announcement">Midterm 2 Opens</strong><br>
+                <a href="/assets/exams/current_mt2.pdf">Sample exam</a><br>
+                <a href="/assets/exams/current_mt2_key.pdf">Solutions</a>
+              </td>
+            </tr>
+
+            <!-- WEEK 6 -->
+            <tr class="week-header">
+              <th colspan="5">Week 6</th>
+            </tr>
+            <tr>
+              <td>Mon<br />Jun 3</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tue<br />June 4</td>
+              <td>Cooper TA Office Hours in Class!</td>
+              <td></td>
+              <td>TA Office Hours, Exam Review</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Wed<br />Jun 5</td>
+              <td>Cooper and Jed TA Office Hours in Class!</td>
+              <td></td>
+              <td>TA Office Hours, Exam Review</td>
+              <td><strong class="test-announcement">Midterm 2 Closes</strong></td>
+            </tr>
+            <tr>
+              <td>Thur<br />Jun 6</td>
+              <td><a href="lectures/Stephens/Lecture29-RequestsBeautifulSoup.pptx">Requests & Beautiful Soup
+                Libraries</a></td>
+              <td></td>
+              <td><a href="/Labs/lab19">Lab 19: Using Beautiful Soup</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Fri<br />Jun 7</td>
+              <td><a href="lectures/Stephens/Lecture30-Hyperlinks.pptx">Hyperlinks</a><br/>
+                <a href="lectures/Stephens/Lecture31-DataScraping.pptx">Data Scraping - Robots and Tags</a></td>
+              <td></td>
+              <td><a href="/Labs/lab20">Lab 20: Url Structure and Library</a></td>
+              <td></td>
+            </tr>
+
+
+            <!-- WEEK 7 -->
+            <tr class="week-header">
+              <th colspan="5">Week 7</th>
+            </tr>
+            <tr>
+              <td>Mon<br />Jun 10</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tue<br />Jun 11</td>
+              <td><a href="lectures/Stephens/Lecture32-ReadingTablesImages.pptx">More Data Scraping - Tables and
+                Images</a></td>
+              <td></td>
+              <td><a href="/Labs/lab21">Lab 21: Web crawl Scavenger hunt</a></td>
+              <td><a href="/Homework/homework07">Homework 7 - Robots</a></td>
+            </tr>
+            <tr>
+              <td>Wed<br />Jun 12</td>
+              <td><a href="lectures/Stephens/Lecture33-DataVisualization.pptx">Data Visualization</a></td>
+              <td></td>
+              <td><a href="/Labs/lab22">Lab 22: Plotting</a></td>
+              <td><a href="/Projects/project04/">Project 4: Web Crawler</a></td>
+            </tr>
+            <tr>
+              <td>Thur<br />Jun 13</td>
+              <td><a href="lectures/Stephens/Lecture26-Efficiency.pptx">Efficiency</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Fri<br />Jun 14</td>
+              <td>
+                <a href="lectures/Stephens/Lecture27-MachineLearning.pptx">Machine Learning</a></br>
+                <a href="lectures/Stephens/Lecture34-Cryptography.pptx">Cryptography</a></br>
+                Iterview Prep, QA, or Extra Credit: Free Coding Project<br/>
+                <a href="lectures/Stephens/Lecture35-Conclusion.pptx">Conclusion</a></td>
+              <td></td>
+              <td>TA Choice</td>
+              <td></td>
+            </tr>
+
+            <!-- WEEK 8 -->
+            <tr class="week-header">
+              <th colspan="5">Week 8</th>
+            </tr>
+            <tr>
+              <td>Mon<br />Jun 17</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tue<br />Jun 18</td>
+              <td>Exam Prep Day</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Wed<br />Jun 19</td>
+              <td>Juneteenth</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Thur<br />Jun 20</td>
+              <td>Finals</td>
+              <td></td>
+              <td></td>
+              <td><strong class="test-announcement">Final Opens</strong></td>
+            </tr>
+            <tr>
+              <td>Fri<br />Jun 21</td>
+              <td>Finals</td>
+              <td></td>
+              <td></td>
+              <td><strong class="test-announcement">Final Closes</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="flex flex-col md:grid md:grid-cols-3 gap-4 not-prose">
+        <div class="mx-auto text-center">
+          <h3 class="text-2xl font-bold">
+            <a href="https://cs111.byu.edu/">CS 111</a>
+          </h3>
+          <ul class="mt-4 space-y-2">
+            <li>
+              <a href="https://cs111.byu.edu/staff/#contact">Office Hours</a>
+            </li>
+            <li>
+              <a href="https://cs111.byu.edu/staff/">Contact Staff</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mx-auto text-center">
+          <h3 class="text-2xl font-bold">Resources</h3>
+          <ul class="mt-4 space-y-2">
+            <li>
+              <a href="https://cs111.byu.edu/articles/studying/">Studying Guide</a>
+            </li>
+            <li>
+              <a href="https://cs111.byu.edu/articles/debugging/">CS 111 Debugging Guide</a>
+            </li>
+            <li>
+              <a href="https://cs111.byu.edu/articles/composition/">CS 111 Composition Guide</a>
+            </li>
+            <li>
+              <a href="https://cs111.byu.edu/articles/pair-programming/">Pair Programming</a>
+            </li>
+            <li>
+              <a href="https://cs111.byu.edu/articles/faqs/">Assignment FAQs</a>
+            </li>
+            <li>
+              <a href="https://cs61a.org/resources/">CS61A study resources</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mx-auto text-center">
+          <h3 class="text-2xl font-bold">Policies</h3>
+          <ul class="mt-4 space-y-2">
+            <li>
+              <a href="https://cs111.byu.edu/articles/about/">Syllabus</a>
+            </li>
+            <li>
+              <a href="https://cs111.byu.edu/articles/about/#assignments">Assignments</a>
+            </li>
+            <li>
+              <a href="https://cs111.byu.edu/articles/about/#exams">Exams</a>
+            </li>
+            <li>
+              <a href="https://cs111.byu.edu/articles/about/#grading">Grading</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </article>
+
+    <footer class="my-8 text-byu-navy dark:text-byu-lightSand">
+      <p class="mt-8 text-lg font-bold">
+        Â© 2024 Brigham Young University, All Rights Reserved
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>

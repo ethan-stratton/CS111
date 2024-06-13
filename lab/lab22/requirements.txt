@@ -1,0 +1,4 @@
+byu_pytest_utils
+byuimage
+matplotlib
+six

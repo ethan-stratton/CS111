@@ -1,0 +1,5 @@
+byu_pytest_utils
+byuimage
+requests
+matplotlib
+bs4

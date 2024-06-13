@@ -1,0 +1,5 @@
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient colors */
+    color: #fff; /* White text color for contrast */
+    font-family: Arial, sans-serif;
+}
